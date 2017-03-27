@@ -34,7 +34,7 @@ void receiveFromRemoteController()
       Serial.print(current_rx[i]);
 
 
-      if (remote_controller.getCurrentValue(current_rx)==1001) {
+      if (current_rx == 1001) {
         pixels.setPixelColor(0, pixels.Color(0, 150, 0));
         pixels.show();
         delay(delayval);
